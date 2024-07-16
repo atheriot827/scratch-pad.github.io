@@ -20,7 +20,7 @@
 
 function print(value) {
   // YOUR CODE BELOW HERE //
-  
+  return console.log(value);
 
   
   // YOUR CODE ABOVE HERE //

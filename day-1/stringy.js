@@ -13,14 +13,15 @@
  * work?
  */
 
-
-
-
 function length(string) {
     // YOUR CODE BELOW HERE //
+//I: string
+//O: return string length
+//C: N/A
+//E: N/A
 
-   
-    
+//use method to return string length
+return string.length; 
     // YOUR CODE ABOVE HERE //
 }
 
@@ -29,8 +30,13 @@ function length(string) {
  */
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-   
+//I: string
+//O: return a new string forced to lowercase
+//C: N/A
+//E: N/A
 
+//use method to return new string forced to lowercase
+return string.toLowerCase();
     // YOUR CODE ABOVE HERE //
 }
 
@@ -39,8 +45,13 @@ function toLowerCase(string) {
  */
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
+//I: string
+//O: return new string forced to uppercase
+//C: N/A
+//E: N/A
 
-
+//use method to return new string forced to uppercase
+return string.toUpperCase();
 
     // YOUR CODE ABOVE HERE //
 }
@@ -60,9 +71,18 @@ function toUpperCase(string) {
  */
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
+//I: string
+//O: return a new string forced to dash-case
+//C: N/A
+//E: replace space in string with dash; enforce lowercase
 
-
-
+//use replace method to return new string forced to dash-case
+//  / /g is a regular expression that matches all spaces in the input string
+// the space btw the slashes is the char thats being replaced
+// 'g' flag make the reg ex global so it will match all occurances of spaces in the string, not just the first one
+//replace spaces with dashes
+//use method to force all to lowercase
+return string.replace(/ /g, '-').toLowerCase();
     // YOUR CODE ABOVE HERE //
 }
 
@@ -80,7 +100,12 @@ function toDashCase(string) {
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
+//I: string, single char
+//O: return true if the string begins with the char, false otherwise
+//C: the function is case insensitive
+//E: use array access; ensure upper and lowercase are compared equally
 
+//use if statement
     
 
     // YOUR CODE ABOVE HERE //
@@ -100,7 +125,10 @@ function beginsWith(string, char) {
  */
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
+//I:
+//O:
+//C:
+//E:
 
 
     // YOUR CODE ABOVE HERE //
@@ -113,7 +141,10 @@ function endsWith(string, char) {
  */
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+//I:
+//O:
+//C:
+//E:
 
 
     // YOUR CODE ABOVE HERE //
@@ -132,7 +163,10 @@ function concat(stringOne, stringTwo) {
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
-
+//I:
+//O:
+//C:
+//E:
 
     // YOUR CODE ABOVE HERE //
 }
@@ -148,7 +182,10 @@ function join(stringOne, stringTwo) {
  */
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+//I:
+//O:
+//C:
+//E:
 
 
     // YOUR CODE ABOVE HERE //
@@ -163,7 +200,10 @@ function longest(stringOne, stringTwo) {
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+//I:
+//O:
+//C:
+//E:
 
 
     // YOUR CODE ABOVE HERE //
@@ -179,7 +219,10 @@ function sortAscending(stringOne, stringTwo) {
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+//I:
+//O:
+//C:
+//E:
 
 
 
