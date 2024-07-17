@@ -13,6 +13,10 @@
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
   
+  //I:
+  //O:
+  //C:
+  //E:
   
   
   
@@ -26,6 +30,10 @@ function printArrayValues(array) {
 function printArrayValuesInReverse(array) {
   // YOUR CODE BELOW HERE //
   
+  //I:
+  //O:
+  //C:
+  //E:
   
   
   
@@ -38,6 +46,10 @@ function printArrayValuesInReverse(array) {
 function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
   
+  //I:
+  //O:
+  //C:
+  //E:
 
   // YOUR CODE ABOVE HERE //
 }
@@ -49,6 +61,10 @@ function getObjectKeys(object) {
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
   
+  //I:
+  //O:
+  //C:
+  //E:
   
   
   
@@ -61,7 +77,10 @@ function printObjectKeys(object) {
 function getObjectValues(object) {
   // YOUR CODE BELOW HERE //
   
-  
+  //I:
+  //O:
+  //C:
+  //E:
   
   
   // YOUR CODE ABOVE HERE //
@@ -74,7 +93,10 @@ function getObjectValues(object) {
 function printObjectValues(object) {
   // YOUR CODE BELOW HERE //
   
-  
+  //I:
+  //O:
+  //C:
+  //E:
   
   
   // YOUR CODE ABOVE HERE //
@@ -86,7 +108,10 @@ function printObjectValues(object) {
 function getObjectLength(object) {
   // YOUR CODE BELOW HERE //
   
-  
+  //I:
+  //O:
+  //C:
+  //E:
   
   
   // YOUR CODE ABOVE HERE //
@@ -99,7 +124,10 @@ function getObjectLength(object) {
 function printObjectValuesInReverse(object) {
   // YOUR CODE BELOW HERE //
   
-  
+  //I:
+  //O:
+  //C:
+  //E:
   
   
   // YOUR CODE ABOVE HERE //
