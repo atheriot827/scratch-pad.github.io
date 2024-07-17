@@ -189,6 +189,8 @@ function join(stringOne, stringTwo) {
 //O: all strings joined together
 //C:
 //E:
+
+//return all strings joined together with join method
  return args.join('');
 
     // YOUR CODE ABOVE HERE //
@@ -205,11 +207,28 @@ function join(stringOne, stringTwo) {
  */
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-//I:
-//O:
-//C:
-//E:
 
+//I: 2 strings
+//O: return the longest of the 2 strings
+//C: N/A
+//E: N/A
+
+//convert arguments object into a real array
+var args = Array.from(arguments);
+
+//initialize a variable to store longest string
+var longestString = '';
+
+//iterate through each string in the array
+for(var i = 0; i < args.length; i++) {
+//check if length is greater than length of longestString
+    if(args[i].length > longestString.length) { 
+//if so update longestString to current string
+        longestString = args[i]; 
+    }
+}
+//return longest string found after looping
+return longestString;
 
     // YOUR CODE ABOVE HERE //
 }
@@ -223,12 +242,23 @@ function longest(stringOne, stringTwo) {
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-//I:
-//O:
-//C:
-//E:
+//I: 2 strings 
+//O: return 1 if the first is higher in alpha order than second, return -1 if second is higher, return 0 if theyre equal
+//C: n/a
+//E: compare strings
 
+//init and convert strings to lowercase
+var lowerStr1 = stringOne.toLowerCase();
+var lowerStr2 = stringTwo.toLowerCase();
 
+//compare strings
+if(lowerStr1 < lowerStr2) {
+    return 1;
+} else if(lowerStr1 > lowerStr2) {
+    return -1;
+} else {
+    return 0;
+}
     // YOUR CODE ABOVE HERE //
 }
 
