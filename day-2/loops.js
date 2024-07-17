@@ -35,10 +35,16 @@ function printArrayValues(array) {
 function printArrayValuesInReverse(array) {
   // YOUR CODE BELOW HERE //
   
-  //I:
-  //O:
-  //C:
-  //E:
+  //I: array
+  //O: print array values
+  //C: use loop
+  //E: n/a
+
+  //iterate through array starting at last value in array
+  for(var i = array.length-1; i >= 0; i--) {
+  //print array values
+    console.log(array[i]);
+  }
   
   
   
