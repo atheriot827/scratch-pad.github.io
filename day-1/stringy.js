@@ -160,11 +160,13 @@ if(string[string.length-1] === char){
  */
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-//I:
-//O:
-//C:
-//E:
+//I: 2 strings
+//O: return the strings concatenated
+//C: N/A
+//E: N/A
 
+//return strings concatnated together
+return stringOne + stringTwo;
 
     // YOUR CODE ABOVE HERE //
 }
