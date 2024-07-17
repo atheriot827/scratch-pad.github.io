@@ -105,9 +105,16 @@ function beginsWith(string, char) {
 //C: the function is case insensitive
 //E: use array access; ensure upper and lowercase are compared equally
 
-//use if statement
-    
+//convert both string and. char to lowercase
+string = string.toLowerCase();
+char = char.toLowerCase();
 
+//use if statement to compare first char of string matches given char
+if(string[0] === char){
+    return true;
+} else {
+    return false;
+}
     // YOUR CODE ABOVE HERE //
 }
 
