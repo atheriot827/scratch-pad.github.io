@@ -184,10 +184,12 @@ return stringOne + stringTwo;
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
-//I:
-//O:
+
+//I: any number of strings
+//O: all strings joined together
 //C:
 //E:
+ return args.join('');
 
     // YOUR CODE ABOVE HERE //
 }
