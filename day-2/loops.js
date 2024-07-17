@@ -140,12 +140,21 @@ function printObjectValues(object) {
 function getObjectLength(object) {
   // YOUR CODE BELOW HERE //
   
-  //I:
-  //O:
-  //C:
-  //E:
+  //I: object
+  //O: return number of key/value pairs stored within that object
+  //C: n/a
+  //E: n/a
   
-  
+  //init counting variable
+  var count = 0
+
+  //use for in loop
+  for (var key in object) {
+  //increment count for each prop found
+    count++;
+  }
+  //return count 
+  return count;
   // YOUR CODE ABOVE HERE //
 }
 
