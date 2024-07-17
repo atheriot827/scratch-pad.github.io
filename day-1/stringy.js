@@ -272,11 +272,23 @@ if(lowerStr1 < lowerStr2) {
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-//I:
-//O:
-//C:
-//E:
+//I: 2 strings
+//O: return 1 if the first is lower in alphabetical order than the second, return -1 if the second is lower in alphabetical order than the first, and return 0 if they're equal
+//C: n/a
+//E: compare strings
 
+//convert strings to lowercase
+var lowerStr1 = stringOne.toLowerCase();
+var lowerStr2 = stringTwo.toLowerCase();
+
+//compare strings
+if(lowerStr1 > lowerStr2) {
+    return 1;
+} else if(lowerStr1 < lowerStr2) {
+    return -1;
+} else {
+    return 0;
+}
 
 
     // YOUR CODE ABOVE HERE //
