@@ -41,12 +41,17 @@ function greeter(hour) {
     //C: use if, else-if, else; must console.log with exact case
     //E: At what threshold does morning become afternoon? What comparison can be used to test that the hour is within the morning threshold. It's best to be consistant and use the SAME type of comparison for each threshold. 
 
+    //use if statement to compare hours
+    //if hour is less than or equal to 11 print GM
     if (hour <= 11) {
         console.log("Good Morning!");
+    //else if hour is less than or equal to 16 print GA
     } else if(hour <= 16) {
         console.log("Good Afternoon!");
+    //else if hour is less than or equal to 21 print GE
     } else if(hour <= 21) {
         console.log("Good Evening!");
+    //other wise print GN
     } else {
         console.log("Good Night!");
     }
