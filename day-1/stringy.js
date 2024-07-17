@@ -102,10 +102,10 @@ function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
 //I: string, single char
 //O: return true if the string begins with the char, false otherwise
-//C: the function is case insensitive
-//E: use array access; ensure upper and lowercase are compared equally
+//C: array access
+//E: ensure upper and lowercase are compared equally
 
-//convert both string and. char to lowercase
+//convert both string and char to lowercase
 string = string.toLowerCase();
 char = char.toLowerCase();
 
@@ -113,6 +113,7 @@ char = char.toLowerCase();
 if(string[0] === char){
     return true;
 } else {
+//otherwise return false
     return false;
 }
     // YOUR CODE ABOVE HERE //
@@ -132,11 +133,22 @@ if(string[0] === char){
  */
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-//I:
-//O:
-//C:
-//E:
+//I: string, char
+//O: return true if the String ends with the character, false otherwise
+//C: array access
+//E: ensure upper and lowercase can be compared equally
 
+//convert string and char to lowercase
+string = string.toLowerCase();
+char = char.toLowerCase();
+
+//use if statement to compare first letter of string and given char
+if(string[string.length-1] === char){
+    return true;
+//otherwise return false
+} else {
+    return false;
+}
 
     // YOUR CODE ABOVE HERE //
 }
