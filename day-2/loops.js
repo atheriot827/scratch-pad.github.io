@@ -13,11 +13,16 @@
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
   
-  //I:
-  //O:
-  //C:
-  //E:
+  //I: array
+  //O: print values
+  //C: use loop
+  //E: n/a
   
+  //loop forward over array
+  for(var i = 0; i < array.length; i++) {
+  //print array values
+    console.log(array[i]);
+  }
   
   
   // YOUR CODE ABOVE HERE //
