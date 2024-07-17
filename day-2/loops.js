@@ -111,7 +111,6 @@ function getObjectValues(object) {
   }
   //return array
   return array;
-  
   // YOUR CODE ABOVE HERE //
 }
 
@@ -122,12 +121,16 @@ function getObjectValues(object) {
 function printObjectValues(object) {
   // YOUR CODE BELOW HERE //
   
-  //I:
-  //O:
-  //C:
-  //E:
-  
-  
+  //I: object
+  //O: print values
+  //C: use loop
+  //E: n/a
+
+  //use loop to iterate through key values
+  for(var key in object) {
+  //print values to console
+    console.log(object[key]);
+  }
   // YOUR CODE ABOVE HERE //
 }
 
