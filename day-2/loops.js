@@ -77,11 +77,16 @@ function getObjectKeys(object) {
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
   
-  //I:
-  //O:
-  //C:
-  //E:
+  //I: object
+  //O: print objects keys
+  //C: use loop
+  //E: n/a
   
+  //iterate through object using for in loop
+  for (var key in object) {
+  //print keys to console
+    console.log(key);
+  }
   
   
   // YOUR CODE ABOVE HERE //
