@@ -87,8 +87,6 @@ function printObjectKeys(object) {
   //print keys to console
     console.log(key);
   }
-  
-  
   // YOUR CODE ABOVE HERE //
 }
 
@@ -98,11 +96,21 @@ function printObjectKeys(object) {
 function getObjectValues(object) {
   // YOUR CODE BELOW HERE //
   
-  //I:
-  //O:
-  //C:
-  //E:
-  
+  //I: object
+  //O: return array contain object values
+  //C: n/a
+  //E: n/a
+
+  //create empty array
+  var array = [];
+
+  //use for in loop to iterate through object
+  for(var key in object) {
+  //push key values into empty array
+    array.push(object[key]);
+  }
+  //return array
+  return array;
   
   // YOUR CODE ABOVE HERE //
 }
