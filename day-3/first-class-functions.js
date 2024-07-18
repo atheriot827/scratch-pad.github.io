@@ -13,7 +13,9 @@
  */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
+    return function(value){
+        return value > base;
+    }
    
     
     // YOUR CODE ABOVE HERE //
@@ -81,7 +83,15 @@ function modifyStrings(strings, modify) {
     
     // YOUR CODE ABOVE HERE //
 }
+// modifyStrings examples
 
+var uppercase = modifyStrings(['alex', 'francis'], function(string){
+    return string.toUpperCase();
+}); // ['ALEX', 'FRANCIS']
+
+var addedExclamation = modifyStrings(['alex', 'francis'], function(string){
+    return string + "!";
+}); // ['alex!', 'francis!']
 
 
 
@@ -102,7 +112,14 @@ function allStringsPass(strings, test) {
     
     // YOUR CODE ABOVE HERE //
 }
+// allStringsPass examples
+var beginsWithA = allStringsPass(['alex', 'aaron'], function(str){
+    return str[0] === 'a';
+}); // true (because all strings begin with A)
 
+var fiveOrMoreLetters = allStringsPass(['alex', 'francis', 'aaron'], function(str){
+    return str.length > 4;
+}); // false (because alex's length is less than 5)
 
 
 
