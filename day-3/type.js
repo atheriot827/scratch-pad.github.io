@@ -24,9 +24,7 @@ function isArray(value) {
 
 //return true or false using Array.isArray() method which will return true or false based on input
 return Array.isArray(value);
-    
-    
-    
+     
     // YOUR CODE ABOVE HERE //
 }
 
@@ -46,17 +44,29 @@ return Array.isArray(value);
 function isObject(value) {
     // YOUR CODE BELOW HERE //
 
-isObject({ a: 1, b: 2}); // true
-isObject([1, 2, 3]); // false
-isObject(null); // false
-isObject(new Date()); // false
+//isObject({ a: 1, b: 2}); // true
+//isObject([1, 2, 3]); // false
+//isObject(null); // false
+//isObject(new Date()); // false
 
-//I:
-//O:
-//C:
-//E
-    
-    
+//I: input value
+//O: return true if the value is an Object intended as a collection, false otherwise
+//C: use instance of operator
+//E: decipher if a value is an Object
+
+//check if the value is not null and its type is object
+if(value !== null && typeof value === 'object') {
+    //check if the value is not an array
+    if(!Array.isArray(value)) {
+        //check if value is not an instance of Date
+        if(!(value instanceof Date)) {
+            //true if its an object intended as a collection
+            return true;
+        }
+    }
+}    
+    //otherwise return fasle
+    return false;
     
     // YOUR CODE ABOVE HERE //
 }
@@ -71,10 +81,11 @@ isObject(new Date()); // false
  */
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
- //I:
+    
+//I:
 //O:
 //C:
-//E   
+//E:
     
     
     
