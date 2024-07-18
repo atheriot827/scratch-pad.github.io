@@ -38,7 +38,11 @@ function isArray(value) {
  */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
-    
+
+isObject({ a: 1, b: 2}); // true
+isObject([1, 2, 3]); // false
+isObject(null); // false
+isObject(new Date()); // false
 
     
     
