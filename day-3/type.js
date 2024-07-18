@@ -16,7 +16,14 @@
  */
 function isArray(value) {
     // YOUR CODE BELOW HERE //
-    
+
+//I: input value
+//O: return true if value is an array, false otherwise
+//C: use a method
+//E: how can we deciper value if a value is an array
+
+//return true or false using Array.isArray() method which will return true or false based on input
+return Array.isArray(value);
     
     
     
@@ -44,6 +51,10 @@ isObject([1, 2, 3]); // false
 isObject(null); // false
 isObject(new Date()); // false
 
+//I:
+//O:
+//C:
+//E
     
     
     
@@ -60,7 +71,10 @@ isObject(new Date()); // false
  */
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
-    
+ //I:
+//O:
+//C:
+//E   
     
     
     
@@ -88,7 +102,10 @@ function isCollection(value) {
  */ 
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    
+ //I:
+//O:
+//C:
+//E   
     
     
     
