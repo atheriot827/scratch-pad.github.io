@@ -29,7 +29,16 @@ function createGreaterThanFilter(base) {
  */
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
+//I: base (could be string or number)
+//O: return a function that tests whether a given value is less than the base
+//C: n/a
+//E: n/a
+
+//return a function the tests whether given value
+return function(value) {
+//is less than the base
+    return value < base;
+}
   
     
     
@@ -45,7 +54,10 @@ function createLessThanFilter(base) {
  */
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
-    
+//I:
+//O:
+//C:
+//E:
     
     
     
@@ -61,7 +73,10 @@ function createStartsWithFilter(startsWith) {
  */
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
-    
+//I:
+//O:
+//C:
+//E:  
     
     
     
@@ -77,7 +92,10 @@ function createEndsWithFilter(endsWith) {
  */
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
-    
+//I:
+//O:
+//C:
+//E:   
     
     
     
@@ -106,7 +124,10 @@ var addedExclamation = modifyStrings(['alex', 'francis'], function(string){
  */
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-    
+//I:
+//O:
+//C:
+//E:   
     
     
     
