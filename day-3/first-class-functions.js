@@ -145,7 +145,6 @@ return modifiedStrings
 }
 
 
-
 /** 
  * Given an Array of Strings and a Function designed to test the String in some 
  * way and return a Boolean on whether it passed, return true if ALL Strings pass the test.
@@ -155,25 +154,35 @@ return modifiedStrings
  * 
  * TIP: You need to loop over the Strings, right? And pass them to the test?
  */
+
+// allStringsPass examples
+//var beginsWithA = allStringsPass(['alex', 'aaron'], function(str){
+//   return str[0] === 'a';
+//}); // true (because all strings begin with A)
+
+//var fiveOrMoreLetters = allStringsPass(['alex', 'francis', 'aaron'], function(str){
+//    return str.length > 4;
+//}); // false (because alex's length is less than 5)
+
+
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-//I:
-//O:
-//C:
-//E:   
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
-}
-// allStringsPass examples
-var beginsWithA = allStringsPass(['alex', 'aaron'], function(str){
-    return str[0] === 'a';
-}); // true (because all strings begin with A)
 
-var fiveOrMoreLetters = allStringsPass(['alex', 'francis', 'aaron'], function(str){
-    return str.length > 4;
-}); // false (because alex's length is less than 5)
+//I: array of strings and a function designed to test the string 
+//O: return a boolean on whether it passed, return true if ALL strings pass the test
+//C: n/a
+//E: n/a
+
+//use loop to iterate over the strings in the array
+for(var i = 0; i < strings.length; i++) {
+    if(test(strings[i]) === false) {
+        return false;
+}
+}
+return true;
+}
+    // YOUR CODE ABOVE HERE //
+
 
 
 
