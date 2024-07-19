@@ -118,13 +118,49 @@ return false;
  */ 
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
- //I:
-//O:
-//C:
-//E   
-    
-    
-    
+//I: value
+//O: return the type of the value as a string
+//C: n/a
+//E: n/a
+
+//use a switch statement to determine the typeof a value
+switch (typeof value) {
+    //check if value is a string
+    case "string":
+        return "string";
+    //check if value is an object
+    case "object":
+    //use if statement
+    ////check if value is an array using Array.isArray method
+    if (Array.isArray(value)) {
+        return "array";
+    //check if value is null, if true return null
+    } else if (value === null) {
+        return "null";
+    //check if value is a date using instance of date, if true return date
+    } else if (value instanceof Date) {
+        return "date";
+    //if none of the above conditions are met return object
+    } else {
+        return "object";
+    }
+    //check if value is undefined
+    case "undefined":
+        return "undefined";
+    //check if value is a number
+    case "number":
+        return "number";
+    //check if value is a boolean
+    case "boolean":
+        return "boolean";
+    //check if value is a function
+    case "function":
+        return "function";
+    //for any other type return unknown
+    default:
+        return "unknown type";
+
+}
     // YOUR CODE ABOVE HERE //
 }
 
