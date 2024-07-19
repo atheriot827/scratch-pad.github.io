@@ -77,6 +77,23 @@ function makeContactList() {
             }
         }
         return undefined;
+       },
+       removeContact: function(contact) {
+        for(var i = 0; i < contacts.length; i++) {
+            if(contacts[i] === contact) {
+                contacts.splice(i, 1);
+            }
+            break
+        }
+       },
+       printAllContactNames: function() {
+        var fullNames = [];
+        for(var i = 0; i < contacts.length; i++) {
+            var contact = contacts[i];
+            var fullName = contact.nameFirst + ' ' + contact.nameLast;
+            fullNames.push(fullName);
+        }
+        return fullNames.join('\n');
        }
     }
 }
