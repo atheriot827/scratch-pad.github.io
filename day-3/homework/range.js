@@ -23,8 +23,39 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
+
+   //I: 2 integers
+   //O: returns an array containing all integers between the 2 params. incl.
+    // if the first arg is great than the second return them in reverse order
+   //C: loop
+   //E: 
     
-    
+   //create 2 arrays to store integers
+   var range = [];
+   var rangeReversed = [];
+
+   //use if statment to determine if start is less than end
+   if(start < end) {
+    //use while loop to count from starting integer to ending integer
+   var count = start;
+
+   while(count <= end) {
+    range.push(count);
+    count++;
+   }
+   return range;
+   }
+   //use if statement to determine if start is grreater than end
+   if(start > end) {
+    //use while loop to count 
+    var count = start;
+
+    while(count >= end) {
+        rangeReversed.push(count);
+        count--;
+    }
+    return rangeReversed;
+   }
     
     
     // YOUR CODE GOES ABOVE HERE //
