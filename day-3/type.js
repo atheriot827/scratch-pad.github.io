@@ -81,14 +81,19 @@ if(value !== null && typeof value === 'object') {
  */
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
+
+//I: value
+//O: return true if is either an Array or is an Object intended as a collection, false if otherwise
+//C: n/a
+//E: n/a
     
-//I:
-//O:
-//C:
-//E:
-    
-    
-    
+//check if the value is not null and its type is object
+if(value !== null && typeof value === 'object') {
+    //return true for arrays and objects excluding Date
+    return Array.isArray(value) || !(value instanceof Date);
+}
+//otherwise return false
+return false;
     // YOUR CODE ABOVE HERE //
 }
 
