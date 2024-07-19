@@ -16,8 +16,6 @@ function createGreaterThanFilter(base) {
     return function(value){
         return value > base;
     }
-   
-    
     // YOUR CODE ABOVE HERE //
 }
 
@@ -39,9 +37,6 @@ return function(value) {
 //is less than the base
     return value < base;
 }
-  
-    
-    
     // YOUR CODE ABOVE HERE //
 }
 
@@ -54,10 +49,25 @@ return function(value) {
  */
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
-//I:
-//O:
-//C:
-//E:
+//I: single char
+//O: return a function that test whether a given string starts with the char given
+//C: needs to be case insensitive
+//E: n/a
+
+//return a function
+return function(str) {
+    //convert startsWith and string to lowercase
+    startsWith = startsWith.toLowerCase();
+    str = str.toLowerCase();
+
+    //use if statement to compare startsWith and first char in string
+    if(str[0] === startsWith) {
+        return true;
+    //otherwise return false
+    } else {
+        return false;
+    }
+}
     
     
     
@@ -73,13 +83,23 @@ function createStartsWithFilter(startsWith) {
  */
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
-//I:
-//O:
-//C:
-//E:  
-    
-    
-    
+//I: char
+//O: return a function that tests whether a given string ends with the endsWith char
+//C: case insensitive
+//E: n/a
+
+//return a function that tests
+return function(str) {
+   //convert endsWith char and string to lowercase
+endsWith = endsWith.toLowerCase(); 
+str = str.toLowerCase();
+
+//create if statement comparing endsWith char to the last char in string
+if(str[str.length-1] === endsWith) {
+    return true;
+}
+return false;
+}
     // YOUR CODE ABOVE HERE //
 }
 
