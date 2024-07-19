@@ -23,7 +23,7 @@
  *         the contact-list. splice
  *      5. add a printAllContactNames() Function to your makeContactList() factory. The printAllContactNames() Function should 
  *         return a String formated with all the full-names of the separated 
- *         with a line-break, like so:
+ *         with a line-break (new line character), like so:
  *          
  *         myContacts.printAllContactNames(); // => Max Gaudin
  *                                                  John Fraboni
@@ -34,12 +34,27 @@
  */
 
 // YOUR CODE GOES BELOW HERE //
+//a.
+//I: id, nameFirst, NameLast
+//O: returns a contact object
+//C:
+//E:
 function makeContact(id, nameFirst, nameLast) {
-    
+    var contact = { };
+
+    contact.id = id;
+    contact.nameFirst = nameFirst;
+    contact.nameLast = nameLast;
+
+    return contact;
 } 
 
 
-
+//b.
+//I:
+//O: returns an Object that manages contacts
+//C: the last full name should have no new-line char added after it
+//E: methods: length, addContact(contact), findContact(fullName), removeContact(contact), add a printAllContactNames() function to makeContactList() factory. This function should return a string formatted with all the full-names of them separated with a line break (new line character)
 function makeContactList() {
     /*
      * You need something here to hold contacts. See length api for a hint:
@@ -54,6 +69,14 @@ function makeContactList() {
        addContact: function(contact) {
         console.log(contact);
         contacts.push(contact);
+       },
+       findContact: function(fullName) {
+        for(var i = 0; i < contacts.length; i++) {
+            if(contacts[i].nameFirst + ' ' + contacts[i].nameLast === fullName) {
+                return contacts[i];
+            }
+        }
+        return undefined;
        }
     }
 }
