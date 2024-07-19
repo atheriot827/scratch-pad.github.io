@@ -110,26 +110,39 @@ return false;
  * TIP: You need to loop over the Strings, right? We need to pass each String to 
  * the modify Function, but we need to collect the results into some collection.
  */
-function modifyStrings(strings, modify) {
-    // YOUR CODE BELOW HERE //
-//I:
-//O:
-//C:
-//E:   
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
-}
+
 // modifyStrings examples
 
-var uppercase = modifyStrings(['alex', 'francis'], function(string){
-    return string.toUpperCase();
-}); // ['ALEX', 'FRANCIS']
+//var uppercase = modifyStrings(['alex', 'francis'], function(string){
+  //  return string.toUpperCase();
+//}); // ['ALEX', 'FRANCIS']
 
-var addedExclamation = modifyStrings(['alex', 'francis'], function(string){
-    return string + "!";
-}); // ['alex!', 'francis!']
+//var addedExclamation = modifyStrings(['alex', 'francis'], function(string){
+  //  return string + "!";
+//}); // ['alex!', 'francis!']
+
+function modifyStrings(strings, modify) {
+    // YOUR CODE BELOW HERE //
+//I: array of strings, function
+//O: return the array of strings modified
+//C: use loop
+//E: create something to collect results
+
+//create empty array to store modified strings
+    var modifiedStrings = [];
+
+//loop over each string
+    for(var i = 0; i < strings.length; i++) {
+        //apply the modify function to the string
+        var modifiedString = modify(strings[i]);
+        //collect strings into new array
+        modifiedStrings.push(modifiedString);
+}
+//return the array of modified strings
+return modifiedStrings
+
+    // YOUR CODE ABOVE HERE //
+}
 
 
 
